@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace = "com.jason.dao.UserDao">
+
+    <resultMap id = "BaseResultMap" type = "User" >
+        <result column = "username" property = "username" />
+        <result column = "password" property = "password" />
+    </resultMap>
+
+    <sql id = "BaseColumnList">
+        <trim suffix="" suffixOverrides=",">
+            username as username,
+            password as password,
+        </trim>
+    </sql>
+
+    <sql id = "BaseWhereClause">
+        <where>
+            <trim prefixOverrides = "and">
+                <if test = "username != null">
+                    and username = #{username}
+                </if>
+                <if test = "password != null">
+                    and password = #{password}
+                </if>
+            </trim>
+        </where>
+    </sql>
+
+
+    <!-- 查询 -->
+    <select id = "select" resultMap = "BaseResultMap">
+        select
+        <include refid = "BaseColumnList" />
+        from legend_user
+        <include refid = "BaseWhereClause" />
+    </select>
+
+
+
+</mapper>
