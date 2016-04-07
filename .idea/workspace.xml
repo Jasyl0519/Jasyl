@@ -2,45 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28f5104b-d763-490c-b323-2b13728ec0c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Jasyl.web/Jasyl.web.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Jasyl_web_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Jasyl.web/web/WEB-INF/web.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/Jasyl_war.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/SpringMVC_war.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/SpringMVC_war_exploded.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/artifacts/Jasyl_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Jasyl_web_war_exploded.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.biz/legend.biz.iml" afterPath="$PROJECT_DIR$/Jasyl.biz/legend.biz.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.biz/pom.xml" afterPath="$PROJECT_DIR$/Jasyl.biz/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.web/legend.web.iml" afterPath="$PROJECT_DIR$/Jasyl.biz/Jasyl.biz.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.web/pom.xml" afterPath="$PROJECT_DIR$/Jasyl.web/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.web/src/main/java/com/jason/controller/JasonTest.java" afterPath="$PROJECT_DIR$/Jasyl.web/src/main/java/com/jason/controller/JasonTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.web/src/main/java/com/jason/controller/UserController.java" afterPath="$PROJECT_DIR$/Jasyl.web/src/main/java/com/jason/controller/UserController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.web/src/main/java/com/jason/dao/UserDao.java" afterPath="$PROJECT_DIR$/Jasyl.web/src/main/java/com/jason/dao/UserDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.web/src/main/java/com/jason/dao/impl/UserDaoImpl.java" afterPath="$PROJECT_DIR$/Jasyl.web/src/main/java/com/jason/dao/impl/UserDaoImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.web/src/main/java/com/jason/model/User.java" afterPath="$PROJECT_DIR$/Jasyl.web/src/main/java/com/jason/model/User.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.web/src/main/java/com/jason/service/UserService.java" afterPath="$PROJECT_DIR$/Jasyl.web/src/main/java/com/jason/service/UserService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.web/src/main/java/com/jason/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/Jasyl.web/src/main/java/com/jason/service/impl/UserServiceImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.web/src/main/java/com/jason/util/SpringUtil.java" afterPath="$PROJECT_DIR$/Jasyl.web/src/main/java/com/jason/util/SpringUtil.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.web/src/main/java/mail/Mail.java" afterPath="$PROJECT_DIR$/Jasyl.web/src/main/java/mail/Mail.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.web/src/main/java/mail/SendMail.java" afterPath="$PROJECT_DIR$/Jasyl.web/src/main/java/mail/SendMail.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.web/src/main/java/test/Book.java" afterPath="$PROJECT_DIR$/Jasyl.web/src/main/java/test/Book.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.web/src/main/java/test/BookImpl.java" afterPath="$PROJECT_DIR$/Jasyl.web/src/main/java/test/BookImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.web/src/main/java/test/BookProxy.java" afterPath="$PROJECT_DIR$/Jasyl.web/src/main/java/test/BookProxy.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.web/src/main/java/test/BookProxyTest.java" afterPath="$PROJECT_DIR$/Jasyl.web/src/main/java/test/BookProxyTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.web/src/main/java/test/test/Customer.java" afterPath="$PROJECT_DIR$/Jasyl.web/src/main/java/test/test/Customer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.web/src/main/java/test/test/Movie.java" afterPath="$PROJECT_DIR$/Jasyl.web/src/main/java/test/test/Movie.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.web/src/main/java/test/test/Rental.java" afterPath="$PROJECT_DIR$/Jasyl.web/src/main/java/test/test/Rental.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.web/src/main/java/test/test/Test1.java" afterPath="$PROJECT_DIR$/Jasyl.web/src/main/java/test/test/Test1.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.web/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/Jasyl.web/src/main/resources/applicationContext.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.web/src/main/resources/config/jdbc.properties" afterPath="$PROJECT_DIR$/Jasyl.web/src/main/resources/config/jdbc.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.web/src/main/resources/data-context.xml" afterPath="$PROJECT_DIR$/Jasyl.web/src/main/resources/data-context.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.web/src/main/resources/mybatis/user/user.xml" afterPath="$PROJECT_DIR$/Jasyl.web/src/main/resources/mybatis/user/user.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.web/src/main/resources/spring-servlet.xml" afterPath="$PROJECT_DIR$/Jasyl.web/src/main/resources/spring-servlet.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.web/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/Jasyl.web/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/legend.web/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/Jasyl.web/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jasyl.iml" afterPath="$PROJECT_DIR$/Jasyl.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Jasyl.web/web/WEB-INF/web.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jasyl.biz/Jasyl.biz.iml" afterPath="$PROJECT_DIR$/Jasyl.biz/Jasyl.biz.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jasyl.web/Jasyl.web.iml" afterPath="$PROJECT_DIR$/Jasyl.web/Jasyl.web.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SpringMVC.iws" />
@@ -75,21 +39,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Jasyl.iml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Jasyl.iml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Jasyl.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.3028721">
-              <caret line="247" column="9" selection-start-line="247" selection-start-column="9" selection-end-line="247" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="232" column="13" selection-start-line="232" selection-start-column="13" selection-end-line="232" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Jasyl.common/pom.xml">
+      <file leaf-file-name="Jasyl.web.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Jasyl.web/Jasyl.web.iml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JasonTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Jasyl.web/src/main/java/com/jason/controller/JasonTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -135,10 +109,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Jasyl.web/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.56774193">
               <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
               <folding />
             </state>
@@ -149,16 +123,6 @@
         <entry file="file://$PROJECT_DIR$/Jasyl.web/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -186,7 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/com/jason/controller/TestUserService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/data-context.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
@@ -237,6 +200,7 @@
         <option value="$PROJECT_DIR$/legend.web/pom.xml" />
         <option value="$PROJECT_DIR$/legend.biz/pom.xml" />
         <option value="$PROJECT_DIR$/Jasyl.iml" />
+        <option value="$PROJECT_DIR$/Jasyl.web/Jasyl.web.iml" />
       </list>
     </option>
   </component>
@@ -408,7 +372,7 @@
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="extract.method.default.visibility" value="private" />
@@ -820,8 +784,9 @@
       <method />
     </configuration>
     <configuration default="false" name="Jasyl" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.61" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="Jasyl:war exploded">
+        <artifact name="Jasyl.web:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/Jasyl" />
           </settings>
@@ -920,16 +885,18 @@
         </SHUTDOWN>
       </ConfigurationWrapper>
       <method>
-        <option name="BuildArtifacts" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Jasyl.web:war exploded" />
+        </option>
       </method>
     </configuration>
     <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Jasyl" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Provider" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Consumer" />
-      <item index="3" class="java.lang.String" itemvalue="Application.BookProxyTest" />
-      <item index="4" class="java.lang.String" itemvalue="Application.SendMail" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.Test1.test" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Provider" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Consumer" />
+      <item index="2" class="java.lang.String" itemvalue="Application.BookProxyTest" />
+      <item index="3" class="java.lang.String" itemvalue="Application.SendMail" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.Test1.test" />
+      <item index="5" class="java.lang.String" itemvalue="Tomcat Server.Jasyl" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -972,7 +939,7 @@
       <workItem from="1459870830244" duration="1304000" />
       <workItem from="1459928265943" duration="2680000" />
       <workItem from="1459932203933" duration="3218000" />
-      <workItem from="1459936686029" duration="2505000" />
+      <workItem from="1459936686029" duration="3176000" />
     </task>
     <task id="LOCAL-00001" summary="add all&#10;">
       <created>1460000083109</created>
@@ -980,11 +947,17 @@
       <option name="project" value="LOCAL" />
       <updated>1460000083109</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add all&#10;">
+      <created>1460001508885</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1460001508885</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64046000" />
+    <option name="totallyTimeSpent" value="64717000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1007,16 +980,16 @@
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32776934" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6676783" sideWeight="0.50486225" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37632778" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52807283" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32776934" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32776934" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2552674" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2552674" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43247345" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43854326" sideWeight="0.49513775" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32776934" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48710167" sideWeight="0.49676898" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.48710167" sideWeight="0.49676898" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -1320,14 +1293,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Jasyl.web/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Jasyl.web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1338,8 +1303,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Jasyl.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3028721">
-          <caret line="247" column="9" selection-start-line="247" selection-start-column="9" selection-end-line="247" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="232" column="13" selection-start-line="232" selection-start-column="13" selection-end-line="232" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jasyl.web/src/main/java/com/jason/controller/JasonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jasyl.web/Jasyl.web.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jasyl.web/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56774193">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1398,11 +1387,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Web|Jasyl.web</last-edited>
+          <last-edited>Jasyl</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
