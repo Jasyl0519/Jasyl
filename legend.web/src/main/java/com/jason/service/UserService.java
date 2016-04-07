@@ -11,6 +11,6 @@ import java.util.Map;
 public interface UserService {
 
     int insert(User user);
-    List<User> select(Map<String,String> map);
+    List<User> select(Map<String, String> map);
 
 }

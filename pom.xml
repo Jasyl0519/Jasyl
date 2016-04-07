@@ -3,8 +3,14 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>Jasyl</groupId>
     <artifactId>Jasyl</artifactId>
-    <packaging>war</packaging>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>Jasyl.common</module>
+        <module>Jasyl.dal</module>
+        <module>legend.web</module>
+        <module>legend.biz</module>
+    </modules>
     <name>Jasyl</name>
     <url>http://maven.apache.org</url>
 
