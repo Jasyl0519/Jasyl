@@ -3,10 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Jasyl.iml" filepath="$PROJECT_DIR$/Jasyl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Jasyl.biz/Jasyl.biz.iml" filepath="$PROJECT_DIR$/Jasyl.biz/Jasyl.biz.iml" />
       <module fileurl="file://$PROJECT_DIR$/Jasyl.common/Jasyl.common.iml" filepath="$PROJECT_DIR$/Jasyl.common/Jasyl.common.iml" />
       <module fileurl="file://$PROJECT_DIR$/Jasyl.dal/Jasyl.dal.iml" filepath="$PROJECT_DIR$/Jasyl.dal/Jasyl.dal.iml" />
-      <module fileurl="file://$PROJECT_DIR$/legend.biz/legend.biz.iml" filepath="$PROJECT_DIR$/legend.biz/legend.biz.iml" />
-      <module fileurl="file://$PROJECT_DIR$/legend.web/legend.web.iml" filepath="$PROJECT_DIR$/legend.web/legend.web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Jasyl.web/Jasyl.web.iml" filepath="$PROJECT_DIR$/Jasyl.web/Jasyl.web.iml" />
     </modules>
   </component>
 </project>
