@@ -1,4 +1,4 @@
-import HttpTool.HttpUrlUtil;
+import HttpTool.HttpClientUtil;
 import HttpTool.ParamGenerator;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -42,7 +42,7 @@ public class HttpTest {
         String url = "http://10.0.0.17:8080/legend/pub/shop/service/category";
 
 
-        String result = HttpUrlUtil.sendGet(url, "");
+        String result = HttpClientUtil.sendGet(url, map);
 
         try {
             ObjectMapper mapper = new ObjectMapper();
