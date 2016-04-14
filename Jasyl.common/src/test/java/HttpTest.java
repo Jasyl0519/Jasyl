@@ -5,10 +5,9 @@ import com.google.gson.reflect.TypeToken;
 import lombok.extern.slf4j.Slf4j;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.junit.Test;
+import security.Base64Coder;
 
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.net.URLDecoder;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -25,21 +24,25 @@ public class HttpTest {
 
         Map<String, Object> map = new HashMap<String, Object>();
 
-        map.put("name", "jason");
-        map.put("name1", "jason");
-        map.put("name2", "你好");
+        map.put("userGlobalId", "669713");
+        /*map.put("name1", "jason");
+        map.put("name2", "你好");*/
+
+
         String param = ParamGenerator.wrapParam(map);
         log.info("hi:{}", param);
 
         try {
-            String decodeStr = URLDecoder.decode(param, "utf-8");
-            log.info("hi:{}", decodeStr);
 
-        } catch (UnsupportedEncodingException e) {
+
+            log.info("hi:{}", Base64Coder.encode(param));
+
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
-        String url = "http://10.0.0.17:8080/legend/pub/shop/service/category";
+        //String url = "http://10.0.0.17:8080/legend/pub/shop/service/category";
+        String url = "http://10.0.0.17:8080/legend/pub/member/info_list";
 
 
         String result = HttpClientUtil.sendGet(url, map);
@@ -55,6 +58,20 @@ public class HttpTest {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+
+    }
+
+
+    @Test
+    public void test1() throws Exception {
+
+        String a = "123中";
+        byte[] pArray = a.getBytes("UTF-8");
+
+        System.out.println(pArray);
+        System.out.println(pArray.length);
+        System.out.println(10.67%4);
 
 
     }
