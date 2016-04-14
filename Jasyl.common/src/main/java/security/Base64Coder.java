@@ -35,6 +35,20 @@ public abstract class Base64Coder {
     }
 
     /**
+     * Base64编码
+     */
+    public static String encode(byte[] data) {
+
+        try {
+            byte[] b = Base64.encodeBase64(data);
+            return new String(b, ENCODING);
+        } catch (UnsupportedEncodingException e) {
+            log.info("encode编码异常:{}", e);
+            return "";
+        }
+    }
+
+    /**
      * Base64安全编码
      */
     public static String encodeSafe(String data) {

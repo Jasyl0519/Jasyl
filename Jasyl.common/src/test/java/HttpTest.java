@@ -6,6 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.junit.Test;
 import security.Base64Coder;
+import security.SHACoder;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -66,12 +67,15 @@ public class HttpTest {
     @Test
     public void test1() throws Exception {
 
-        String a = "123中";
+        String a = "123中国";
+
         byte[] pArray = a.getBytes("UTF-8");
 
-        System.out.println(pArray);
-        System.out.println(pArray.length);
-        System.out.println(10.67%4);
+
+        System.out.println(SHACoder.encodeSHAHex(a).equals(SHACoder.encodeHex(a)));
+
+        System.out.println(SHACoder.encodeSHAHex(a));
+        System.out.println(SHACoder.encodeHex(a));
 
 
     }
