@@ -8,8 +8,8 @@
     <modules>
         <module>Jasyl.common</module>
         <module>Jasyl.dal</module>
-        <module>legend.web</module>
-        <module>legend.biz</module>
+        <module>Jasyl.web</module>
+        <module>Jasyl.biz</module>
     </modules>
     <name>Jasyl</name>
     <url>http://maven.apache.org</url>

@@ -22,19 +22,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="Jasyl.biz" />
         <module name="Jasyl.common" />
         <module name="Jasyl.dal" />
-        <module name="legend.biz" />
-        <module name="legend.web" />
+        <module name="Jasyl.web" />
         <module name="SpringMVC" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Jasyl" target="1.5" />
+      <module name="Jasyl.biz" target="1.5" />
       <module name="Jasyl.common" target="1.5" />
       <module name="Jasyl.dal" target="1.5" />
-      <module name="legend.biz" target="1.5" />
-      <module name="legend.web" target="1.5" />
+      <module name="Jasyl.web" target="1.5" />
       <module name="SpringMVC" target="1.5" />
     </bytecodeTargetLevel>
   </component>

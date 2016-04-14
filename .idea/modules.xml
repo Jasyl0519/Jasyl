@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/Jasyl.biz/Jasyl.biz.iml" filepath="$PROJECT_DIR$/Jasyl.biz/Jasyl.biz.iml" />
       <module fileurl="file://$PROJECT_DIR$/Jasyl.common/Jasyl.common.iml" filepath="$PROJECT_DIR$/Jasyl.common/Jasyl.common.iml" />
       <module fileurl="file://$PROJECT_DIR$/Jasyl.dal/Jasyl.dal.iml" filepath="$PROJECT_DIR$/Jasyl.dal/Jasyl.dal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Jasyl.web/Jasyl.web.iml" filepath="$PROJECT_DIR$/Jasyl.web/Jasyl.web.iml" />
     </modules>
   </component>
 </project>
