@@ -1,5 +1,6 @@
 import HttpTool.HttpClientUtil;
 import HttpTool.ParamGenerator;
+import JsonUtil.JSONUtil;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import lombok.extern.slf4j.Slf4j;
@@ -9,7 +10,10 @@ import security.Base64Coder;
 import security.SHACoder;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.ListIterator;
 import java.util.Map;
 
 /**
@@ -72,12 +76,82 @@ public class HttpTest {
         byte[] pArray = a.getBytes("UTF-8");
 
 
-        System.out.println(SHACoder.encodeSHAHex(a).equals(SHACoder.encodeHex(a)));
+        System.out.println(SHACoder.encodeSHAHex(a, "SHA").equals(SHACoder.encodeHex(a)));
 
         System.out.println(SHACoder.encodeSHAHex(a));
         System.out.println(SHACoder.encodeHex(a));
 
 
+    }
+
+    @Test
+    public void test2() throws Exception {
+
+        List<String> list = new ArrayList<String>();
+        list.add("1");
+        list.add("2");
+        list.add("3");
+        list.add("4");
+        ListIterator<String> li = list.listIterator();
+
+        while(li.hasNext()) {
+            String str = li.next();
+            System.out.println(str);
+
+            li.set("5");
+            System.out.println(JSONUtil.object2Json(li));
+
+        }
+
+        /*for (ListIterator<String> li = list.listIterator(); li.hasNext();) {
+
+            li.next();
+            li.set("5");
+
+
+
+        }*/
+
+        System.out.println(list);
+
+    }
+
+    @Test
+    public void test3() throws Exception {
+
+        ArrayList<String> list = new ArrayList<String>();
+        list.add("1");
+        list.add("2");
+        list.add("3");
+        list.add("4");
+
+
+
+
+        //Iterator<String> it = list.iterator();
+        /*while (it.hasNext()) {
+
+            String str = it.next();
+
+            if ("1".equals(str)) {
+                it.remove();
+            }
+        }*/
+
+        /*for (int i = 0; i < list.size(); i++) {
+            list.remove(i);
+            *//*String str = list.get(i);
+            if (str.equals("5")) {
+            }*//*
+        }*/
+
+        for (String str : list) {
+            if ("1".equals(str)) {
+                list.remove(str);
+            }
+        }
+
+        System.out.println(list);
     }
 
 }
