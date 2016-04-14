@@ -1,6 +1,6 @@
-import HttpTool.HttpClientUtil;
-import HttpTool.ParamGenerator;
-import JsonUtil.JSONUtil;
+import httpTool.HttpClientUtil;
+import httpTool.ParamGenerator;
+import jsonUtil.JSONUtil;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import lombok.extern.slf4j.Slf4j;
