@@ -1,0 +1,24 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+local-values.conf
+target
+*~
+bin
+*.idea
+*.iml
+*.eml
+.project
+.settings
+.classpath
+/target
+.springBeans
+.DS_Store
+*/test-output/**
+*/target/**
+*.log
+legend.ipr
+legend.iws
+antx.properties
+rebel.xml
+.ropeproject
+*.orig
