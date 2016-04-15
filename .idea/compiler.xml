@@ -29,13 +29,12 @@
         <module name="SpringMVC" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.7">
       <module name="Jasyl" target="1.5" />
       <module name="Jasyl.biz" target="1.5" />
       <module name="Jasyl.common" target="1.5" />
       <module name="Jasyl.dal" target="1.5" />
       <module name="Jasyl.web" target="1.5" />
-      <module name="SpringMVC" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
