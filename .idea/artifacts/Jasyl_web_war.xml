@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="Jasyl.web:war">
-    <output-path>$PROJECT_DIR$/Jasyl.web/target</output-path>
-    <root id="archive" name="Jasyl.war">
-      <element id="artifact" artifact-name="Jasyl.web:war exploded" />
-    </root>
-  </artifact>
-</component>
