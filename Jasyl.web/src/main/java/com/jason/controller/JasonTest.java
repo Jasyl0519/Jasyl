@@ -1,27 +1,30 @@
 package com.jason.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import redis.clients.jedis.Jedis;
 
 /**
  * Created by jason on 16/4/5.
  */
 
 @Controller
-@RequestMapping("/pub/jason")
+@RequestMapping("/test")
 public class JasonTest {
 
-    @RequestMapping(value = "sylvia_sb")
-    @ResponseBody
-    public String test() {
+    @RequestMapping(value = "test")
+    public String test(Model model) {
 
 
-        String str = "sylvia is a pig";
-        return str;
+        Jedis jedis = new Jedis("127.0.0.1", 6379);
+        jedis.set("name","jason");
+        System.out.println(jedis.get("name"));
+
+        model.addAttribute("a", jedis.get("name"));
+        return "test";
 
     }
-
 
 
 }
