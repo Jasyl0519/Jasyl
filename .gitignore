@@ -16,9 +16,8 @@ bin
 */test-output/**
 */target/**
 *.log
-legend.ipr
-legend.iws
 antx.properties
 rebel.xml
 .ropeproject
 *.orig
+.gitignore
