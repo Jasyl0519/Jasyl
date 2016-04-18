@@ -11,7 +11,7 @@ bin
 /target
 .springBeans
 .DS_Store
-*/test-output/**
+*/test.test-output/**
 */target/**
 *.log
 antx.properties

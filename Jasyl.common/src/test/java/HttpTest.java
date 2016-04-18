@@ -1,20 +1,11 @@
-import httpTool.HttpClientUtil;
-import httpTool.ParamGenerator;
 import jsonUtil.JSONUtil;
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 import lombok.extern.slf4j.Slf4j;
-import org.codehaus.jackson.map.ObjectMapper;
 import org.junit.Test;
-import security.Base64Coder;
 import security.SHACoder;
 
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.ListIterator;
-import java.util.Map;
 
 /**
  * Created by jason on 16/4/13.
@@ -24,14 +15,14 @@ import java.util.Map;
 public class HttpTest {
 
 
-    @Test
-    public void test() {
+    /*@Test
+    public void test.test() {
 
         Map<String, Object> map = new HashMap<String, Object>();
 
         map.put("userGlobalId", "669713");
-        /*map.put("name1", "jason");
-        map.put("name2", "你好");*/
+        *//*map.put("name1", "jason");
+        map.put("name2", "你好");*//*
 
 
         String param = ParamGenerator.wrapParam(map);
@@ -50,7 +41,7 @@ public class HttpTest {
         String url = "http://10.0.0.17:8080/legend/pub/member/info_list";
 
 
-        String result = HttpClientUtil.sendGet(url, map);
+        String result = httpTool.HttpClientUtil.sendGet(url, map);
 
         try {
             ObjectMapper mapper = new ObjectMapper();
@@ -65,7 +56,7 @@ public class HttpTest {
         }
 
 
-    }
+    }*/
 
 
     @Test
@@ -116,42 +107,5 @@ public class HttpTest {
 
     }
 
-    @Test
-    public void test3() throws Exception {
-
-        ArrayList<String> list = new ArrayList<String>();
-        list.add("1");
-        list.add("2");
-        list.add("3");
-        list.add("4");
-
-
-
-
-        //Iterator<String> it = list.iterator();
-        /*while (it.hasNext()) {
-
-            String str = it.next();
-
-            if ("1".equals(str)) {
-                it.remove();
-            }
-        }*/
-
-        /*for (int i = 0; i < list.size(); i++) {
-            list.remove(i);
-            *//*String str = list.get(i);
-            if (str.equals("5")) {
-            }*//*
-        }*/
-
-        for (String str : list) {
-            if ("1".equals(str)) {
-                list.remove(str);
-            }
-        }
-
-        System.out.println(list);
-    }
 
 }
