@@ -10,6 +10,7 @@
         <module>Jasyl.dal</module>
         <module>Jasyl.web</module>
         <module>Jasyl.biz</module>
+        <module>Jasyl.practice</module>
     </modules>
     <name>Jasyl</name>
     <url>http://maven.apache.org</url>
