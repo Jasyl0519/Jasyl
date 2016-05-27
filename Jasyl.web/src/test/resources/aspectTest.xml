@@ -10,7 +10,9 @@
   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
   http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.0.xsd">
 
+    <aop:aspectj-autoproxy />
 
-    <bean id="myTestBean" class="Factory.MyTestBean" />
+    <bean id="test" class="spring.aop.TestBean" />
+    <bean class="spring.aop.AspectJTest" />
 
 </beans>
