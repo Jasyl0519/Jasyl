@@ -5,8 +5,14 @@ package designMode.templateMethod;
  */
 public abstract class AbstractSort {
 
+    /**
+     *  需要子类去拓展的方法
+     */
     public abstract void sort(int[] array);
 
+    /**
+     * 模板方法 final 不能修改
+     */
     public final void printArray(int[] array) {
         sort(array);
 
