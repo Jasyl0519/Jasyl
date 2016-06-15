@@ -12,7 +12,6 @@ public class Test {
 
         for (int i = 0; i < 5; i++) {
 
-            service.execute(new ThreadTest());
         }
 
 
