@@ -19,7 +19,7 @@ public class MyThread implements Runnable{
     @Override
     public void run() {
 
-        content.method();
+        //content.method();
 
     }
 
@@ -41,7 +41,7 @@ public class MyThread implements Runnable{
 
             count.await();
             System.out.println(" end ");
-        } catch (InterruptedException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
