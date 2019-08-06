@@ -34,6 +34,13 @@ public class SugarMilk extends Decorator {
         sugarMilk.showCoffee();
         System.out.println(sugarMilk.showPrice());
 
+
+        //加牛奶 + 糖
+        Decorator sugarMilk1 = new SugarMilk();
+        sugarMilk1.setCoffee(sugar);
+        sugarMilk1.showCoffee();
+        System.out.println(sugarMilk1.showPrice());
+
     }
 
 }

@@ -1,8 +1,5 @@
 package designMode.proxy.dynamicProxy;
 
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Proxy;
-
 /**
  * Created by jason on 16/6/3.
  */
@@ -10,15 +7,17 @@ public class TestDynProxy {
 
     public static void main(String[] args) {
 
+        System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
+
         RealSubject rs = new RealSubject();
 
-        InvocationHandler handler = new DynamicSubject(rs);
-
-        Class cls = rs.getClass();
+        DynamicSubject handler = new DynamicSubject(rs);
 
         //以下是一次性生成
-        Subject subject = (Subject) Proxy.newProxyInstance(cls.getClassLoader(), cls.getInterfaces(), handler);
+        Subject subject = (Subject) handler.getProxy();
         subject.request();
+
+        System.out.println(rs.getClass().getInterfaces());
 
 
     }

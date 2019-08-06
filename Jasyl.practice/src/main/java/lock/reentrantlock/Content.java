@@ -7,16 +7,22 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class Content {
 
-    private ReentrantLock lock = new ReentrantLock();
+    private static ReentrantLock lock = new ReentrantLock();
 
-    public void method(){
+
+    public static void main(String[] args) {
+        method();
+
+    }
+
+    public static void method(){
 
         lock.lock();
 
         System.out.println("do atomic operation");
 
         try {
-            Thread.sleep(2000);
+            Thread.sleep(100000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {

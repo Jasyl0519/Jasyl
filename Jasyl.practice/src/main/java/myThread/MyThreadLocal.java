@@ -5,19 +5,48 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by jason on 16/5/31.
  */
-public class MyThread implements Runnable {
+public class MyThreadLocal {
 
-    public void run() {
-        System.out.println("run");
+    private Long getA () {
+        return 100l;
     }
 
-    public static void main(String[] args) {
+    public static final ThreadLocal<Long> time_threadlocal = new ThreadLocal<Long>() {
 
-        new Thread();
-        new Thread(new TimeWaiting(), "TimeWaitingThread").start();
-        new Thread(new Waiting(), "WaitingThread").start();
-        new Thread(new Blocked(), "BlockedThread-1").start();
-        new Thread(new Blocked(), "BlockedThread-2").start();
+        protected Long initialValue() {
+            return System.currentTimeMillis();
+        }
+
+    };
+
+    static final MyThreadLocal myThreadLocal = new MyThreadLocal() {
+        public Long getA () {
+            return 200l;
+
+        }
+    };
+
+    public static final void begin() {
+        time_threadlocal.set(System.currentTimeMillis());
+    }
+
+    public static final long end() {
+        return System.currentTimeMillis() - time_threadlocal.get();
+    }
+
+
+    public static void main(String[] args) throws InterruptedException {
+
+        System.out.println( myThreadLocal.getA());
+        MyThreadLocal.begin();
+
+        TimeUnit.SECONDS.sleep(1);
+
+        
+
+        System.out.println("cost " + MyThreadLocal.end() + " m");
+
+
 
 
     }

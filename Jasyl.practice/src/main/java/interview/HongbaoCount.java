@@ -10,8 +10,10 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.Vector;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
@@ -27,6 +29,7 @@ import java.util.concurrent.Executors;
 public class HongbaoCount implements Runnable {
 
     private static String hongbaoPath = "/Users/jason/hongbao/";
+    private static String hongbaoResulePath = "/Users/jason/hongbao/result/";
 
     private static String accountPath = "/Users/jason/account/";
 
@@ -138,12 +141,31 @@ public class HongbaoCount implements Runnable {
             }
         }
 
+
+
         try {
-            calc(resultMap);
+            Set<Integer> idHash = getIdHashKey(resultMap);
+            calc(resultMap, idHash);
         } catch (IOException e) {
             e.printStackTrace();
         }
 
+    }
+
+
+    /**
+     * 按id % 100分组
+     * @param resultMap
+     * @return
+     */
+    public static Set<Integer> getIdHashKey(HashMap<String, BigDecimal> resultMap) {
+        Set<Integer> keys = new HashSet<>();
+        for (String s : resultMap.keySet()) {
+            int i = Integer.valueOf(s) % 100;
+            keys.add(i);
+
+        }
+        return keys;
     }
 
 
@@ -153,12 +175,12 @@ public class HongbaoCount implements Runnable {
      * @param resultMap
      * @throws IOException
      */
-    public void calc(HashMap<String, BigDecimal> resultMap) throws IOException {
+    public void calc(HashMap<String, BigDecimal> resultMap, Set<Integer> idHash) throws IOException {
 
         List<HashMap<String, BigDecimal>> result = new ArrayList<>();
-        for (int i = 1; i <= 100; i++) {
 
-            int index = i;
+        for (Integer index : idHash) {
+
             accountExecutor.execute(new Runnable() {
                 @Override
                 public void run() {
@@ -175,7 +197,9 @@ public class HongbaoCount implements Runnable {
                             BigDecimal accountAmount = new BigDecimal(currentWords[1]);
 
                             BigDecimal hongbaoAmount = resultMap.get(accountId);
-                            accountAmount = accountAmount.add(hongbaoAmount);
+                            if (hongbaoAmount != null) {
+                                accountAmount = accountAmount.add(hongbaoAmount);
+                            }
 
                             accountMap.put(accountId, accountAmount);
                             result.add(accountMap);
@@ -188,7 +212,6 @@ public class HongbaoCount implements Runnable {
 
                 }
             });
-
 
         }
 
@@ -214,4 +237,6 @@ public class HongbaoCount implements Runnable {
 
         }
     }
+
+
 }

@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
 
 /**
  * Created by jason on 16/6/3.
@@ -30,6 +31,13 @@ public class DynamicSubject implements InvocationHandler {
 
 
         return result;
+    }
+
+    public Object getProxy() {
+
+        return Proxy.newProxyInstance(Thread.currentThread().getContextClassLoader(),
+                object.getClass().getInterfaces(), this);
+        
     }
 
 
