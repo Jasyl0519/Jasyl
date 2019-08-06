@@ -1,8 +1,5 @@
 package lock;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
@@ -11,26 +8,26 @@ import java.util.concurrent.locks.ReentrantLock;
 public class LockClass implements Runnable {
 
     private int count;
+    private ReentrantLock lock;
 
-    LockClass(){
-        count = 0;
+    public LockClass(ReentrantLock lock) {
+        this.lock = lock;
+    }
+
+    public void add() {
+        for (int i = 0; i < 100000; i++) {
+            count ++;
+        }
     }
 
 
-    @Override
     public void run() {
-
-        Lock lock = new ReentrantLock();
         lock.lock();
 
-        
-        try {
-            for (int i = 0; i < 5; i++) {
 
-                System.out.println(Thread.currentThread().getName() + ":" + (count++));
-                Thread.sleep(100);
-            }
-        } catch (InterruptedException e) {
+        try {
+            add();
+        } catch (Exception e) {
             e.printStackTrace();
         } finally {
             lock.unlock();
@@ -40,16 +37,22 @@ public class LockClass implements Runnable {
     }
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
-        ExecutorService executorService = Executors.newFixedThreadPool(3);
-        LockClass lockClass = new LockClass();
-        for (int i = 0; i < 2; i++) {
+        ReentrantLock lock = new ReentrantLock();
 
-            executorService.execute(lockClass);
-        }
+        LockClass lockClass = new LockClass(lock);
 
-        executorService.shutdown();
+        Thread thread1 = new Thread(lockClass);
+        Thread thread2 = new Thread(lockClass);
+
+        thread1.start();
+        thread2.start();
+
+        thread1.join();
+        thread2.join();
+
+        System.out.println(lockClass.count);
 
     }
 }
